@@ -1,0 +1,105 @@
+*{
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+
+    /* font-size */
+    --big: 24px;
+    --mid: 18px;
+    --sm: 14px;
+
+    /* Colors */
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue:#1A9AF7;
+    --soft-blue:#E7F5FF;
+    --warm-black:#201E1C;
+    --warm-black-1:#282623;
+    --just-white:#FFFFFF;
+    --grey:#BABABA;
+    --off-white:#FAF8F7;
+
+}
+
+header{
+
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    
+    
+}
+
+/* LOGO  */
+
+.principal-logo img{
+
+    width: 150px;
+    height: 24px;
+    margin: 42px auto 36px auto;
+
+}
+
+/* TEXTO  */
+
+.p-container{
+
+    color: var(--just-white);
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    text-align: center;
+    margin: 16px;
+   
+}
+
+.p-container h1{
+
+    font-size: var(--big);
+    padding-bottom: 24px;
+}
+
+.p-container p{
+
+    font-size: var(--sm);
+}
+
+/* BOTON  */
+
+.button-container{
+
+    width: 229px;
+    height: 48px;
+    margin-top: 32px;
+    background-color: var(--just-white);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    position: absolute;
+    top: 275px;
+
+}
+
+.button-container a{
+
+    font-size: var(--sm);
+    text-decoration: none;
+    color: var(--warm-black);
+    font-weight: bold;
+    
+}
+
+.button-container a span{
+
+    margin-left: 14px;
+}

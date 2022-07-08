@@ -1,0 +1,528 @@
+*{
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root{
+
+    /* font-size */
+    --big: 24px;
+    --mid: 18px;
+    --sm: 14px;
+
+    /* Colors */
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue:#1A9AF7;
+    --soft-blue:#E7F5FF;
+    --warm-black:#201E1C;
+    --warm-black-1:#282623;
+    --just-white:#FFFFFF;
+    --grey:#BABABA;
+    --off-white:#FAF8F7;
+    --dark-grey:#808080;
+
+
+}
+
+main{
+
+    width: 100%;
+    height: auto;
+}
+
+main .exchange{
+
+    background-color: var(--off-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main .exchange .bitcoin-img{
+
+    width: 195px;
+    height: 195px;
+    margin-top: 59px;
+    margin-bottom: 40px;
+}
+
+main .exchange-text{
+
+    width: 90%;
+}
+
+main .exchange-text p:nth-child(1){
+
+    font-size: var(--big);
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+main .exchange-text p:nth-child(2){
+
+    font-size: var(--sm);
+    color:#757575;
+    margin-bottom: 48px;
+}
+
+/* TABLA DE VALORES  */
+.table-container{
+
+    display: block;
+    height: 365px;
+    overflow-y: scroll;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y proximity;
+    gap: 8px;
+}
+
+main .main-table,
+.secondary-table{
+
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: "Inter",sans-serif;
+}
+
+.main-table .coin-text{
+
+    font-size: var(--mid);
+    font-weight: bold;
+    margin-left: 5px;
+    margin-bottom: 12px;
+    line-height: 23.44px;
+    color: var(--bitcoin-orange);
+    text-align: start;
+}
+
+
+.main-table .main-table-container,
+.secondary-table .secondary-table-container{
+
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+    
+
+}
+
+
+.main-table .main-table-container table,
+.secondary-table-container table{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.main-table .main-table-container table td,
+.secondary-table-container table td{
+
+    width: 50%;
+    
+    background-color: var(--just-white);
+}
+
+.main-table-container table .coin-name,
+.secondary-table-container table .coin-name{
+
+    color: var(--grey);
+    font-size: var(--mid);
+    font-weight: 500;
+    line-height: 19px;
+}
+
+.main-table-container table .coin-price,
+.secondary-table-container table .coin-name{
+
+    font-size: var(--sm);
+    font-weight: 400;
+    line-height: 17px;
+}
+
+.main-table .actualization-date{
+
+    width: 80%;
+    height: 31px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px auto 65px auto;
+    
+}
+
+.actualization-date p{
+
+    font-size:var(--sm);
+}
+
+
+/* SECOND TABLE  */
+
+
+.secondary-table .second-coin-text{
+
+    font-size: var(--mid);
+    font-weight: bold;
+    margin-left: 5px;
+    margin-bottom: 12px;
+    line-height: 23.44px;
+    color: var(--secondary-blue);
+    text-align: start;
+}
+
+.secondary-table .actualization-date{
+
+    width: 80%;
+    height: 31px;
+    background-color: var(--soft-blue);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px auto 65px auto;
+    
+}
+
+.secondary-table .actualization-date p{
+
+    font-size:var(--sm);
+}
+
+
+/* SECTION INFORMATION  */
+
+.benefits{
+
+    background-color: var(--warm-black);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.benefits .text-benefits{
+
+    width: 90%;
+    margin: 64px auto 32px auto;
+
+}
+
+.benefits .text-benefits h2{
+
+    font-size: var(--big);
+    color: var(--just-white);
+    text-align: center;
+}
+
+.benefits .text-benefits p{
+
+    font-size: var(--sm);
+    color: var(--dark-grey);
+    text-align: center;
+}
+
+
+.benefits .information-box{
+
+    width: 90%;
+    max-width: 360px;
+    min-width: 235px;
+    height: 152px;
+    background-color: var(--warm-black-1);
+    border-radius: 4px;
+    margin-bottom: 16px;
+    padding: 16px;
+
+}
+
+.benefits .information-box h3{
+
+    font-size: var(--mid);
+    color: var(--just-white);
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.benefits .information-box p{
+
+    font-size: var(--sm);
+    color: var(--dark-grey);
+    
+}
+
+/* SECTION BITCOIN BABY  */
+
+.bitcoin-baby{
+
+    width: 100%;
+    height: 50vh;
+    min-width: 320px;
+    background-image: url("../assets/imgs/bitcoinbaby.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.bitcoin-baby .img-baby{
+
+    width: 100vw;
+    height: 387px;
+}
+
+.bitcoin-baby p{
+
+    display: inline-block;
+    margin-top: 70px;
+    color: var(--just-white);
+    line-height: 26px;
+    font-size: var(--big);
+    font-weight: bold;
+}
+
+/* SECTION MEMBERSHIP PLANS  */
+
+.plans{
+
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--off-white);
+    
+}
+
+.plans .plans-text{
+
+    margin-top: 64px;
+    max-width: 320px;
+}
+
+.plans .plans-text h2{
+
+    font-size: var(--big);
+    line-height: 26px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.plans .plans-text p{
+
+    font-size: var(--sm);
+    line-height: 18px;
+    color: var(--dark-grey);
+    text-align: center;
+    
+}
+
+.plans .recomended-container{
+
+    background-color: var(--bitcoin-orange);
+    width: 101px;
+    height: 20px;
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    
+}
+
+.plans .cards-container .recomend-card #recomended p{
+
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--just-white);
+}
+
+.plans .cards-container{
+
+    display: block;
+    height:316px;
+    max-width: 360px;
+    overflow-y: scroll;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y proximity;
+    gap: 8px;
+    margin-top: 50px;
+    margin-bottom: 64px;
+}
+
+.plans .cards-container .card-base{
+
+    height: 247px;
+    width: 190px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 8px;
+    padding-top: 31px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ /* PLAN RECOMENDADO  */
+
+.plans .cards-container #recomend-card{
+
+    padding-top:0 ;
+} 
+
+.cards-container .recomend-card p:nth-child(2){
+
+    font-size: var(--sm);
+    text-align: center;
+    line-height: 18px;
+    font-weight: bold;
+
+}
+
+.cards-container .recomend-card .price-container{
+
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards-container .recomend-card .price-container p:nth-child(1){
+
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.cards-container .recomend-card .price-container p:nth-child(2){
+
+    font-size: 52px;
+    line-height: 62px;
+    font-weight: bold;
+
+}
+
+.cards-container .recomend-card p:nth-child(4){
+
+    font-size: 12px;
+    color: var(--dark-grey);
+    text-align: center;
+    width: 158px;
+    margin-top: 16px;
+}
+
+.cards-container .recomend-card .call-to-action{
+
+    
+    width: 151px;
+    height: 48px;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.cards-container .recomend-card .call-to-action a{
+
+    font-size: var(--sm);
+    color: var(--warm-black);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* DEMAS PLANES  */
+
+.plans .cards-container .card-base p:nth-child(1){
+
+    font-size: var(--sm);
+    text-align: center;
+    line-height: 18px;
+    font-weight: bold;
+
+}
+
+.plans .cards-container .card-base .price-container{
+
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plans .cards-container .card-base .price-container:nth-child(1){
+
+    font-size: 12px;
+    line-height: 14px;
+
+}
+
+.plans .cards-container .card-base .price-container:nth-child(2){
+
+    font-size: 52px;
+    line-height: 62px;
+    font-weight: bold;
+
+}
+
+.plans .cards-container .card-base p:nth-child(3){
+
+    font-size: 12px;
+    color: var(--dark-grey);
+    text-align: center;
+    width: 158px;
+    margin-top: 16px;
+}
+
+.plans .cards-container .card-base .call-to-action{
+
+    width: 151px;
+    height: 48px;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+.plans .cards-container .card-base .call-to-action a{
+
+    font-size: var(--sm);
+    color: var(--warm-black);
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+
+
+
+
+
+
+

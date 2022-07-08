@@ -1,0 +1,27 @@
+@media (min-width:930px) {
+
+    .table-container{
+
+        display: flex;
+        overflow-y: hidden;
+    }
+
+    
+    /* SECTION FOOTER  */
+    
+    .links-footer{
+    
+        flex-wrap: wrap;
+        height: 24px;
+        align-self: center;
+    }
+
+    /* BABYBITCOIN SECTION  */
+
+    .bitcoin-baby{
+
+        background-image: url("../assets/imgs/bitcoinbaby2.jpg");
+        
+    }
+}
+
